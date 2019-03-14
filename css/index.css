@@ -1,0 +1,652 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul,
+li,
+input,
+p,
+label {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    font-size: 14px;
+    background-color: #f2f2f2;
+}
+
+.index {
+    min-width: 1200px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.index-l {
+    width: 220px;
+    background-color: #20222A;
+    float: left;
+    overflow: hidden;
+    transition: width 1s;
+    position: relative;
+}
+#logo{
+    position: absolute;
+    color: #fff;
+    top: 20px;
+    left: 20px;
+    display: none;
+}
+
+.index-l .index-l-t {
+    width: 220px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.index-l .index-l-t p {
+    color: rgba(255, 255, 255, .8);
+}
+
+.sidebar {
+    width: 240px;
+    overflow: auto;
+    height: 885px;
+}
+
+.sidebar>a {
+    display: block;
+    width: 220px;
+    height: 56px;
+    /* text-align: center; */
+    line-height: 56px;
+    box-sizing: border-box;
+    /* padding-top: 8px; */
+    padding-left: 20px;
+    cursor: pointer;
+    /* border-left: 5px solid transparent; */
+    position: relative;
+}
+/* .sidebar>a:hover{
+    border-left: 5px solid #009688;
+} */
+.sidebar>a::before{
+    content: "";
+    width: 5px;
+    height: 0;
+    background-color: #009688;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transition: all .5s;
+}
+.sidebar>a:hover:before{
+    top: 0;
+    height: 56px;
+}
+
+.sidebar i {
+    width: 14px;
+    height: 14px;
+    color: rgba(255, 255, 255, .8);
+}
+
+.sidebar>a>span {
+    display: inline-block;
+    width: 145px;
+    height: 40px;
+    color: rgba(255, 255, 255, .8);
+    margin-left: 10px;
+}
+
+
+/* 应用 */
+
+.use {
+    /* background-color: blue */
+}
+
+.use-content {
+    width: 220px;
+    /* height: 170px; */
+    background-color: #16181d;
+    /* background-color: red; */
+    display: none;
+}
+
+.use-content>a {
+    display: block;
+    width: 220px;
+    height: 40px;
+    box-sizing: border-box;
+    padding-left: 48px;
+}
+
+.use-content>a span {
+    display: inline-block;
+    width: 145px;
+    height: 40px;
+    line-height: 40px;
+    color: rgba(255, 255, 255, .8);
+}
+
+.content-system-content {
+    width: 220px;
+    height: 130px;
+    /* background-color: red; */
+    display: none;
+}
+
+.content-system-content>a {
+    display: block;
+    width: 220px;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding-left: 60px;
+    color: rgba(255, 255, 255, .8);
+}
+
+.backgrounk{
+    background-color: #009688;
+}
+
+/* 社区系统 */
+
+.Community-system-content {
+    width: 220px;
+    /* height: 90px; */
+    /* background-color: red; */
+    display: none;
+}
+
+.Community-system-content>a {
+    display: block;
+    width: 220px;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding-left: 60px;
+    color: rgba(255, 255, 255, .8);
+}
+
+
+/* 高级 */
+
+.advanced-system-content {
+    width: 220px;
+    height: px;
+}
+@media (max-width: 960px){
+    .index-l{
+        transition: all 0.5s;
+        display: none;
+    }
+}
+
+
+
+
+/* 右侧 */
+
+.index-r {
+    /* height: 950px; */
+    /* position: relative; */
+    float: left;
+    /* left: 220px; */
+    /* min-width: 1000px; */
+    background-color: red;
+    transition: width 1s;
+}
+
+.index-r-t {
+    /* width: 100%; */
+}
+
+.index-r-t-t {
+    height: 50px;
+    background-color: #fff;
+    border-bottom: 1px solid #ededed;
+}
+
+.index-r-t-b {
+    height: 50px;
+    background-color: #fff;
+    line-height: 50px;
+    padding-left: 30px;
+}
+
+.index-r-t-b a {
+    color: #999;
+    text-decoration: none
+}
+
+.index-r-t-b span {
+    margin-left: 6px;
+    color: #666;
+}
+
+.index-r-t-ul-l {
+    float: left;
+}
+
+.index-r-t-ul-l li {
+    height: 49px;
+    line-height: 51px;
+    float: left;
+    margin-left: 40px;
+    border-top: 2px solid transparent;
+    cursor: pointer
+}
+
+.index-r-t-ul-l li:hover {
+    border-top: 2px solid #000;
+    transition: border-top 1s
+}
+
+.index-r-t-ul-l li input {
+    width: 180px;
+    height: 32px;
+    border: 0;
+    outline: none;
+}
+
+.index-r-t-ul-r {
+    float: right;
+}
+
+.index-r-t-ul-r li {
+    float: left;
+    padding: 0 20px;
+    height: 49px;
+    line-height: 49px;
+    border-top: 2px solid transparent;
+    cursor: pointer
+}
+
+.index-r-t-ul-r li:hover {
+    border-top: 2px solid #000;
+    transition: border-top 1s
+}
+
+.index-r-t-ul-r li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.exit-li {
+    position: relative;
+}
+
+.exit-li:hover .exit {
+    display: block;
+}
+
+.exit {
+    width: 98px;
+    height: 140px;
+    background-color: #fff;
+    position: absolute;
+    /* top: 53px; */
+    left: -10px;
+    display: none;
+    border: 1px solid #ddd;
+    z-index: 999;
+}
+
+.exit p {
+    width: 98px;
+    height: 37px;
+    text-align: center;
+    line-height: 37px;
+    margin-top: 8px
+}
+
+.exit p:hover {
+    background-color: #f2f2f2;
+}
+
+
+/* 内容区域 */
+.index-r{
+    position: relative;
+}
+.index-r-c {
+    /* height: 600px; */
+    background-color: #f2f2f2;
+    overflow: auto;
+    box-sizing: border-box;
+    padding: 15px;
+    position: relative;
+}
+
+.index-r-c-c {
+    /* width: 100%; */
+    /* height: 500px; */
+    background-color: #fff;
+}
+
+.index-r-c-c-t {
+    /* width: 100%; */
+    /* height: 78px; */
+    box-sizing: border-box;
+    padding: 15px;
+    border-bottom: 1px solid #f6f6f6;
+}
+
+.index-r-c-c-t label {
+    display: inline-block;
+    width: 110px;
+    height: 38px;
+    line-height: 38px;
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 20px;
+    margin-left: 15px;
+}
+
+.index-r-c-c-t input {
+    width: 190px;
+    height: 34px;
+    text-indent: 1em;
+    outline: none
+}
+
+.index-r-c-c-t button {
+    width: 57px;
+    height: 38px;
+    background-color: #009688;
+    border: 0;
+    vertical-align: middle;
+    margin-left: 25px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.index-r-c-c-t button:hover {
+    background-color: #33ABA0;
+    transition: background-color 1s;
+}
+
+.index-r-c-c-t button i {
+    color: #fff;
+}
+
+
+
+/* 添加数据弹出框 */
+.cross{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 16px;
+    height: 16px;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.index-r-add{
+    width: 550px;
+    height: 500px;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    box-shadow: 3px 3px 50px #ddd;
+    display: none;
+}
+.index-r-add form h3{
+    display: inline-block;
+    width: 550px;
+    height: 50px;
+    background-color: #009688;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+}
+.index-r-add form table{
+    box-sizing: border-box;
+    padding: 20px 40px;
+}
+.index-r-add form tr{
+    width: 600px;
+    height: 50px;
+    
+}
+.index-r-add form th{
+    font-weight: normal;
+}
+.index-r-add form td{
+    padding-left: 30px;
+}
+.index-r-add form td input{
+    width: 200px;
+    height: 34px;
+}
+#addBtn{
+    display: inline-block;
+    width: 64px;
+    height: 38px;
+    background-color: #009688;
+    border: 0;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 38px;
+    margin-left: 130px;
+    cursor: pointer;
+}
+.fabu{
+    position: relative;
+}
+#issue{
+    width: 74px;
+    height: 24px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 20px;
+    border: 1px solid #d2d2d2;
+    cursor: pointer;
+    color: #999;
+    font-size: 12px;
+    text-indent: 1em;
+    outline: none
+}
+.fabu i{
+    width: 16px;
+    height: 16px;
+    background-color: #d2d2d2;
+    position: absolute;
+    border-radius: 20px;
+    top: 17px;
+    left: 35px;
+    transition: all 0.2s;
+}
+
+
+/* 编辑 */
+.redactDelete{
+    width: 550px;
+    height: 500px;
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    box-shadow: 3px 3px 50px #ddd;
+    display: none;
+}
+.redactDelete form h3{
+    display: inline-block;
+    width: 550px;
+    height: 50px;
+    background-color: #009688;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+}
+.redactDelete form table{
+    box-sizing: border-box;
+    padding: 20px 40px;
+}
+.redactDelete form tr{
+    width: 600px;
+    height: 50px;
+    
+}
+.redactDelete form th{
+    font-weight: normal;
+}
+.redactDelete form td{
+    padding-left: 30px;
+}
+.redactDelete form td input{
+    width: 200px;
+    height: 34px;
+}
+#addBtn1{
+    display: inline-block;
+    width: 64px;
+    height: 38px;
+    background-color: #009688;
+    border: 0;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 38px;
+    margin-left: 130px;
+    cursor: pointer;
+}
+/* 主体数据 */
+
+.index-r-c-c-card {
+    box-sizing: border-box;
+    padding: 10px 15px;
+}
+
+.index-r-c-c-card-button button {
+    width: 64px;
+    height: 38px;
+    border: 0;
+    background-color: #009688;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.index-r-c-c-card-button button:last-child {
+    margin-left: 10px;
+}
+
+.index-r-c-c-card-button button:hover {
+    background-color: #33ABA0;
+    transition: background-color 1s;
+}
+
+.index-r-c-c-card-table {
+    margin-top: 10px;
+}
+
+.card-table tr input {
+    width: 18px;
+    height: 18px;
+}
+
+.card-table {
+    color: #666;
+}
+
+.card-table tr th {
+    width: 240px;
+    height: 36px;
+    border: 1px solid #e6e6e6;
+}
+
+.card-table tr td {
+    width: 240px;
+    height: 36px;
+    text-align: center;
+    border: 1px solid #e6e6e6;
+}
+
+.card-table tr th:first-child {
+    width: 48px;
+    height: 36px;
+    ;
+}
+
+.card-table tr td:first-child {
+    width: 48px;
+    height: 36px;
+}
+
+.status{
+    width: 48px;
+    height: 22px;
+    border: 0;
+    background-color: #009688;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    outline: none
+}
+
+/* 编辑和删除 */
+.redact{
+    border: 0;
+    display: inline-block;
+    width: 51px;
+    height: 22px;
+    background-color: #48b0fc;
+    color: #fff;
+    text-align: center;
+    line-height: 22px;
+    font-size: 12px;
+    cursor: pointer;
+    outline: none
+}
+
+.delete{
+    border: 0;
+    background-color: #FF5722;
+    display: inline-block;
+    width: 51px;
+    height: 22px;
+    color: #fff;
+    text-align: center;
+    line-height: 22px;
+    font-size: 12px;
+    cursor: pointer;
+    outline: none
+}

@@ -1,0 +1,151 @@
+html,body,h1,h2,h3,h4,h5,h6,p,span,ul,li,input,p{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f2f2f2;
+    font-size: 16px;
+}
+.login{
+    width: 100%;
+    /* background-color: aquamarine; */
+    overflow: hidden;
+}
+.login-top{
+    width: 375px;
+    height: 480px;
+    /* background-color: red; */
+    margin: 0 auto;
+    margin-top: 110px;
+    text-align: center;
+}
+.login-top-above{
+    box-sizing: border-box;
+    padding: 20px;
+}
+.login-top-above h2{
+    padding-bottom: 10px;
+    color: #000;
+}
+.login-top-above p{
+    color: #b3b4b3;
+}
+.login-top-below{
+    box-sizing: border-box;
+    padding: 20px;
+}
+.form-item{
+    width: 335px;
+    height: 38px;
+    margin-bottom: 20px;
+}
+.form-item-content{
+    width: 335px;
+    height: 38px;
+    background-color: #fff;
+}
+.i{
+    width: 38px;
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+    float: left;
+}
+.form-item i{
+    color: #d2d2d2;
+}
+.form-item .form-item-content input{
+    width: 290px;
+    height: 38px;
+    border: 0;
+    border-radius: 2px;
+    float: right;
+    /* text-indent: 1em; */
+    outline: none;
+    color: #d2d2d2;
+}
+.form-item-l{
+    width: 195px;
+    height: 38px;
+    background-color: #fff;
+    float: left;
+}
+.form-item-l input{
+    width: 150px;
+    height: 38px;
+    border: 0;
+    outline: none;
+    float: right;
+}
+.form-item-r{
+    float: right;
+}
+.form-item .remember{
+    /* width: 99px; */
+    height: 20px;;
+    float: left;
+    line-height: 18px
+}
+.form-item .remember input{
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+.form-item .remember span{
+    font-size: 14px;
+    color: #666;
+}
+.form-item .forget{
+    float: right
+}
+.form-item .forget a{
+    font-size: 14px;
+    color: #32a99e;
+    text-decoration: none
+}
+.form-item button{
+    width: 335px;
+    height: 38px;
+    background-color: #30a89d;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+}
+.account-l{
+    float: left;
+}
+.account-l span{
+    font-size: 14px;
+    color: #666;
+}
+.account-r{
+    float: right;
+}
+.account-r a{
+    color: #32a99e;
+    text-decoration: none
+}
+
+
+.login-bottom{
+    width: 100%;
+    height: 100px;
+    /* background-color: red; */
+    margin-top: 240px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.login-bottom p{
+    text-align: center;
+    padding-bottom: 5px;
+    color: #797979;
+    font-size: 14px;
+}
+.login-bottom p a{
+    color: #797979;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.login-bottom p a:hover{
+    color: #000;
+}
